@@ -1,0 +1,17 @@
+app/app-jar/.mvn
+app/app-jar/target
+core/infra/target
+core/service-api/target
+core/service-impl/target
+core/service-restcli/target
+core/dal/target
+core/ws/target
+
+modules/module-a/infra/target
+modules/module-a/service-api/target
+modules/module-a/service-impl/target
+modules/module-a/service-restcli/target
+modules/module-a/dal/target
+modules/module-a/ws/target
+/modules/module-a/service-rest-cli/target/
+/.idea
