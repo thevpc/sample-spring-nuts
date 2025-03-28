@@ -39,7 +39,7 @@
 	</dependencies>
 
 	<repositories>
-		<repository><id>thevpc</id><name>thevpc</name><url>https://thevpc.net/maven</url></repository>
+		<repository><id>thevpc</id><name>thevpc</name><url>https://maven.thevpc.net</url></repository>
 	</repositories>
 
 </project>
