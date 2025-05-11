@@ -9,6 +9,7 @@
 	<groupId>net.thevpc.samples.springnuts</groupId>
 	<artifactId>springnuts-app-jar</artifactId>
 	<version>1.0.0</version>
+        <name>Nuts Community Tutorials :: Spring App :: App JAR</name>
 	<url/>
 	<licenses>
 		<license/>

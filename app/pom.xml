@@ -3,6 +3,7 @@
     <groupId>net.thevpc.tutorials.springnuts.build</groupId>
     <artifactId>springnuts-app-builder</artifactId>
     <version>1.0</version>
+    <name>Nuts Community Tutorials :: Spring App :: App Builder</name>
 
     <packaging>pom</packaging>
     <properties>

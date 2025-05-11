@@ -9,6 +9,7 @@
 	<groupId>net.thevpc.samples.springnuts</groupId>
 	<artifactId>springnuts-modulea-dal</artifactId>
 	<version>1.0.0</version>
+    <name>Nuts Community Tutorials :: Spring App :: Module A DAL</name>
 	<url/>
 	<licenses>
 		<license/>

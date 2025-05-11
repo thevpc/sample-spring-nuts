@@ -9,6 +9,7 @@
 	<groupId>net.thevpc.samples.springnuts</groupId>
 	<artifactId>springnuts-core-infra</artifactId>
 	<version>1.0.0</version>
+        <name>Nuts Community Tutorials :: Spring App :: Core INFRA</name>
 	<url/>
 	<licenses>
 		<license/>

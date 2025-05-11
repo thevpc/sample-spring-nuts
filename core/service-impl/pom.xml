@@ -9,6 +9,7 @@
 	<groupId>net.thevpc.samples.springnuts</groupId>
 	<artifactId>springnuts-core-service-impl</artifactId>
 	<version>1.0.0</version>
+        <name>Nuts Community Tutorials :: Spring App :: Core Service Impl</name>
 	<url/>
 	<licenses>
 		<license/>

@@ -3,7 +3,7 @@
     <groupId>net.thevpc.tutorials.springnuts.build</groupId>
     <artifactId>springnuts-all-builder</artifactId>
     <version>1.0</version>
-
+    <name>Nuts Community Tutorials :: Spring App :: All Builder</name>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

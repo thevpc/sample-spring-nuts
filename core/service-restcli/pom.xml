@@ -9,6 +9,7 @@
     <groupId>net.thevpc.samples.springnuts</groupId>
     <artifactId>springnuts-core-service-restcli</artifactId>
     <version>1.0.0</version>
+        <name>Nuts Community Tutorials :: Spring App :: Core Service Rest CLI</name>
     <url/>
     <licenses>
         <license/>
