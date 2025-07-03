@@ -1,5 +1,6 @@
 package net.thevpc.samples.springnuts;
 
+import net.thevpc.nuts.NApp;
 import net.thevpc.nuts.NApplication;
 import net.thevpc.nuts.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
@@ -9,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringNutsApplication implements NApplication {
+public class SpringNutsApplication  {
     @Autowired
     private NWorkspace workspace;
     @Autowired
@@ -19,7 +20,7 @@ public class SpringNutsApplication implements NApplication {
         SpringApplication.run(SpringNutsApplication.class, args);
     }
 
-    @Override
+    @NApp.Main
     public void run() {
         out.println("Hello ##Nuts## World!...");
         out.println(NMsg.ofC("we are running Nuts %s %s %s %s %s %s",
