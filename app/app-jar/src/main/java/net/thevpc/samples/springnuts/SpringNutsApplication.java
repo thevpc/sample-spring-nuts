@@ -1,6 +1,6 @@
 package net.thevpc.samples.springnuts;
 
-import net.thevpc.nuts.NApp;
+import net.thevpc.nuts.NAppRunner;
 import net.thevpc.nuts.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
 import net.thevpc.nuts.util.NMsg;
@@ -19,7 +19,7 @@ public class SpringNutsApplication  {
         SpringApplication.run(SpringNutsApplication.class, args);
     }
 
-    @NApp.Runner
+    @NAppRunner
     public void run() {
         out.println("Hello ##Nuts## World!...");
         out.println(NMsg.ofC("we are running Nuts %s %s %s %s %s %s",
