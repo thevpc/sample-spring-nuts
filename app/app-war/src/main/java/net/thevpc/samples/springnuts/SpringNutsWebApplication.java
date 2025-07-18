@@ -8,17 +8,18 @@ import net.thevpc.nuts.util.NMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @NAppDefinition
 @SpringBootApplication
-public class SpringNutsApplication  {
+public class SpringNutsWebApplication  extends SpringBootServletInitializer {
     @Autowired
     private NWorkspace workspace;
     @Autowired
     private NPrintStream out;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringNutsApplication.class, args);
+        SpringApplication.run(SpringNutsWebApplication.class, args);
     }
 
     @NAppRunner

@@ -12,5 +12,6 @@
     </properties>
     <modules>
         <module>app-jar</module>
+        <module>app-war</module>
     </modules>
 </project>
