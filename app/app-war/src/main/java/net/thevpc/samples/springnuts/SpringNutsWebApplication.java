@@ -1,8 +1,8 @@
 package net.thevpc.samples.springnuts;
 
-import net.thevpc.nuts.NAppDefinition;
-import net.thevpc.nuts.NAppRunner;
-import net.thevpc.nuts.NWorkspace;
+import net.thevpc.nuts.app.NAppDefinition;
+import net.thevpc.nuts.app.NAppRunner;
+import net.thevpc.nuts.core.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
 import net.thevpc.nuts.util.NMsg;
 import org.springframework.beans.factory.annotation.Autowired;
