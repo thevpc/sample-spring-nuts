@@ -2,7 +2,7 @@ package net.thevpc.samples.springnuts.core.util;
 
 import net.thevpc.samples.springnuts.core.model.common.AppException;
 import net.thevpc.nuts.util.NAssert;
-import net.thevpc.nuts.util.NMsg;
+import net.thevpc.nuts.text.NMsg;
 import net.thevpc.nuts.util.NOptional;
 import net.thevpc.nuts.util.NStringUtils;
 
