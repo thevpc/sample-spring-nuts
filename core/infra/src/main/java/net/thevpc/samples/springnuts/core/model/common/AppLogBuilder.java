@@ -2,7 +2,7 @@ package net.thevpc.samples.springnuts.core.model.common;
 
 import net.thevpc.samples.springnuts.core.model.entity.AppLog;
 import net.thevpc.samples.springnuts.core.util.ValidationUtils;
-import net.thevpc.nuts.util.NMsg;
+import net.thevpc.nuts.text.NMsg;
 
 import java.io.Serializable;
 
