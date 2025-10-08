@@ -4,7 +4,7 @@ import net.thevpc.nuts.app.NAppDefinition;
 import net.thevpc.nuts.app.NAppRunner;
 import net.thevpc.nuts.core.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
-import net.thevpc.nuts.util.NMsg;
+import net.thevpc.nuts.text.NMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
