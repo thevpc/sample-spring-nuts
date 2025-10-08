@@ -1,7 +1,7 @@
 package net.thevpc.samples.springnuts.core.service.impl.service;
 
 import net.thevpc.nuts.util.NAssert;
-import net.thevpc.nuts.util.NMsg;
+import net.thevpc.nuts.text.NMsg;
 import net.thevpc.nuts.util.NOptional;
 import net.thevpc.samples.springnuts.core.dal.entity.AppUserEntity;
 import net.thevpc.samples.springnuts.core.dal.entity.AppUserRoleEntity;
