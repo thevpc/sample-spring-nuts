@@ -4,6 +4,7 @@ import net.thevpc.nuts.app.NAppDefinition;
 import net.thevpc.nuts.app.NAppRunner;
 import net.thevpc.nuts.core.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
+import net.thevpc.nuts.platform.NEnv;
 import net.thevpc.nuts.text.NMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -24,13 +25,14 @@ public class SpringNutsApplication  {
     @NAppRunner
     public void run() {
         out.println("Hello ##Nuts## World!...");
+        NEnv environment = NEnv.of();
         out.println(NMsg.ofC("we are running Nuts %s %s %s %s %s %s",
                 workspace.getRuntimeId().getVersion(),
-                workspace.getPlatform(),
-                workspace.getOs(),
-                workspace.getOsDist(),
-                workspace.getArch(),
-                workspace.getDesktopEnvironment()
+                environment.getJava(),
+                environment.getOs(),
+                environment.getOsDist(),
+                environment.getArch(),
+                environment.getDesktopEnvironment()
         ));
     }
 }
