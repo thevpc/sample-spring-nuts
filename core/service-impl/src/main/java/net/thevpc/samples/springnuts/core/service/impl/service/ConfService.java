@@ -36,7 +36,7 @@ public class ConfService {
     }
 
     private static String resolveTenant(String tenant) {
-        return NStringUtils.firstNonBlank(NStringUtils.trim(tenant), "ALL");
+        return NStringUtils.firstNonBlankTrimmed(tenant, "ALL");
     }
 
     public void setConfValue(String groupName, String name, String value) {
@@ -217,7 +217,7 @@ public class ConfService {
 
 
     private String resolveSecret(String secret) {
-        return NStringUtils.firstNonBlank(secret, masterSecret, DEFAULT_MASTER_PASSWORD);
+        return NStringUtils.firstNonBlankTrimmed(secret, masterSecret, DEFAULT_MASTER_PASSWORD);
     }
 
 }
