@@ -30,7 +30,7 @@ public class LogService {
         AppLog log = new AppLog();
         throwable = ValidationUtils.rootException(throwable);
         log.setDescription(ValidationUtils.stacktrace(throwable));
-        log.setMessage(NStringUtils.firstNonBlank(throwable.getMessage(), "Error"));
+        log.setMessage(NStringUtils.firstNonBlankTrimmed(throwable.getMessage(), "Error"));
         if (throwable instanceof AppException) {
             String code = ((AppException) throwable).getInfo().getCode();
             if (code != null) {
