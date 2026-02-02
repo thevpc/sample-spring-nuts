@@ -22,7 +22,7 @@ public class ValidationUtils {
     }
 
     public static Instant requireDateAsInstant(String item, String name, String errorCode) {
-        String s = NAssert.requireNonBlank(item, name);
+        String s = NAssert.requireNamedNonBlank(item, name);
         return parseRequiredDateAsInstant(s, name, errorCode);
     }
 
