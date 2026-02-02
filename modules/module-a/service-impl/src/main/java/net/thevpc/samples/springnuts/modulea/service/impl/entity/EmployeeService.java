@@ -13,7 +13,7 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
     public Employee addEmployee(Employee employee) {
-        NAssert.requireTrue(employee != null, "employee must not be null");
+        NAssert.requireNamedTrue(employee != null, "employee must not be null");
         EmployeeEntity employeeEntity = EmployeeConverter.INSTANCE.toEntity(employee);
         employeeRepository.save(employeeEntity) ;
         employee.setId(employeeEntity.getId());
