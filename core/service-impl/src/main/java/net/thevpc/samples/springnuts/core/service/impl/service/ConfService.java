@@ -72,8 +72,8 @@ public class ConfService {
     }
 
     public void setConfValue(String tenant, String groupName, String name, String value) {
-        NAssert.requireNonBlank(groupName, "group");
-        NAssert.requireNonBlank(name, "name");
+        NAssert.requireNamedNonBlank(groupName, "group");
+        NAssert.requireNamedNonBlank(name, "name");
         tenant = resolveTenant(tenant);
         List<AppConfEntity> old = confRepository.findByTenantAndGroupNameAndName(tenant, groupName, name);
         if (old.isEmpty()) {
@@ -106,8 +106,8 @@ public class ConfService {
     }
 
     public void setConfValue(String tenant, String groupName, String name, String value, boolean enabled) {
-        NAssert.requireNonBlank(groupName, "group");
-        NAssert.requireNonBlank(name, "name");
+        NAssert.requireNamedNonBlank(groupName, "group");
+        NAssert.requireNamedNonBlank(name, "name");
         tenant = resolveTenant(tenant);
         List<AppConfEntity> old = confRepository.findByTenantAndGroupNameAndName(tenant, groupName, name);
         if (old.isEmpty()) {
@@ -176,8 +176,8 @@ public class ConfService {
     }
 
     public NOptional<String> getConfValue(String tenant, String groupName, String name) {
-        NAssert.requireNonBlank(groupName, "group");
-        NAssert.requireNonBlank(name, "name");
+        NAssert.requireNamedNonBlank(groupName, "group");
+        NAssert.requireNamedNonBlank(name, "name");
         tenant = resolveTenant(tenant);
         List<AppConfEntity> old = confRepository.findByTenantAndGroupNameAndName(tenant, groupName, name);
         if (old.isEmpty()) {
@@ -196,8 +196,8 @@ public class ConfService {
     }
 
     public void setConfEnabled(String tenant, String groupName, String name, boolean enabled, String defaultValue) {
-        NAssert.requireNonBlank(groupName, "group");
-        NAssert.requireNonBlank(name, "name");
+        NAssert.requireNamedNonBlank(groupName, "group");
+        NAssert.requireNamedNonBlank(name, "name");
         tenant = resolveTenant(tenant);
         List<AppConfEntity> old = confRepository.findByTenantAndGroupNameAndName(tenant, groupName, name);
         if (old.isEmpty()) {
