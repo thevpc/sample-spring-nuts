@@ -33,11 +33,11 @@ public class AppUserService {
     }
 
     public void addUser(AppUser user) {
-        NAssert.requireNonNull(user, "user");
-        NAssert.requireNull(user.getId(), "id");
-        NAssert.requireNonBlank(user.getUsername(), "username");
-        NAssert.requireNonBlank(user.getEmail(), "username");
-        NAssert.requireNonBlank(user.getPassword(), "password");
+        NAssert.requireNamedNonNull(user, "user");
+        NAssert.requireNamedNull(user.getId(), "id");
+        NAssert.requireNamedNonBlank(user.getUsername(), "username");
+        NAssert.requireNamedNonBlank(user.getEmail(), "username");
+        NAssert.requireNamedNonBlank(user.getPassword(), "password");
         AppUserEntity entity = AppUserConverter.INSTANCE.toEntity(user);
         String p = user.getPassword();
         if (p != null) {
