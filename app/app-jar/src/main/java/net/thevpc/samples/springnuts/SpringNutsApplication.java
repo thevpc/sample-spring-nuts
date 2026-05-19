@@ -28,11 +28,11 @@ public class SpringNutsApplication  {
         NEnv environment = NEnv.of();
         out.println(NMsg.ofC("we are running Nuts %s %s %s %s %s %s",
                 workspace.runtimeId().version(),
-                environment.getJava(),
-                environment.getOs(),
-                environment.getOsDist(),
-                environment.getArch(),
-                environment.getDesktopEnvironment()
+                environment.java(),
+                environment.os(),
+                environment.osDist(),
+                environment.arch(),
+                environment.desktopEnvironment()
         ));
     }
 }
