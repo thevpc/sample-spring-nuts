@@ -28,7 +28,7 @@ public class SpringNutsWebApplication  extends SpringBootServletInitializer {
         out.println("Hello ##Nuts## World!...");
         NEnv environment = NEnv.of();
         out.println(NMsg.ofC("we are running Nuts %s %s %s %s %s %s",
-                workspace.getRuntimeId().version(),
+                workspace.runtimeId().version(),
                 environment.getJava(),
                 environment.getOs(),
                 environment.getOsDist(),
