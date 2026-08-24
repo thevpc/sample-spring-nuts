@@ -1,7 +1,7 @@
 package net.thevpc.samples.springnuts;
 
-import net.thevpc.nuts.app.NAppDefinition;
-import net.thevpc.nuts.app.NAppRunner;
+import net.thevpc.nuts.app.NApp;
+import net.thevpc.nuts.app.NAppRun;
 import net.thevpc.nuts.core.NWorkspace;
 import net.thevpc.nuts.io.NPrintStream;
 import net.thevpc.nuts.platform.NEnv;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@NAppDefinition
+@NApp
 @SpringBootApplication
 public class SpringNutsApplication  {
     @Autowired
@@ -22,7 +22,7 @@ public class SpringNutsApplication  {
         SpringApplication.run(SpringNutsApplication.class, args);
     }
 
-    @NAppRunner
+    @NAppRun
     public void run() {
         out.println("Hello ##Nuts## World!...");
         NEnv environment = NEnv.of();
