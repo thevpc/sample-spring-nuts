@@ -10,13 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Lazy;
 
 @NApp
 @SpringBootApplication
 public class SpringNutsWebApplication  extends SpringBootServletInitializer {
-    @Autowired
+    @Autowired @Lazy
     private NWorkspace workspace;
-    @Autowired
+    @Autowired @Lazy
     private NPrintStream out;
 
     public static void main(String[] args) {

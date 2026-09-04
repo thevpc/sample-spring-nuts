@@ -9,13 +9,14 @@ import net.thevpc.nuts.text.NMsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Lazy;
 
 @NApp
 @SpringBootApplication
 public class SpringNutsApplication  {
-    @Autowired
+    @Autowired @Lazy
     private NWorkspace workspace;
-    @Autowired
+    @Autowired @Lazy
     private NPrintStream out;
 
     public static void main(String[] args) {
@@ -34,5 +35,6 @@ public class SpringNutsApplication  {
                 environment.arch(),
                 environment.desktopEnvironment()
         ));
+        System.exit(0);
     }
 }
