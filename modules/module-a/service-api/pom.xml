@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>net.thevpc.samples.springnuts</groupId>
 	<artifactId>springnuts-modulea-service-api</artifactId>
-	<version>1.0.0.0</version>
+	<version>1.1.0.0</version>
     <name>Nuts Community Tutorials :: Spring App :: Module A Service API</name>
 	<url/>
 	<licenses>
@@ -27,8 +27,8 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency><groupId>net.thevpc.samples.springnuts</groupId><artifactId>springnuts-core-service-api</artifactId><version>1.0.0.0</version></dependency>
-		<dependency><groupId>net.thevpc.samples.springnuts</groupId><artifactId>springnuts-modulea-infra</artifactId><version>1.0.0.0</version></dependency>
+		<dependency><groupId>net.thevpc.samples.springnuts</groupId><artifactId>springnuts-core-service-api</artifactId><version>1.1.0.0</version></dependency>
+		<dependency><groupId>net.thevpc.samples.springnuts</groupId><artifactId>springnuts-modulea-infra</artifactId><version>1.1.0.0</version></dependency>
 		<dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>
 	</dependencies>
 	<repositories>
