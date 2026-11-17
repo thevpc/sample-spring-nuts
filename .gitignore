@@ -15,3 +15,6 @@ modules/module-a/dal/target
 modules/module-a/ws/target
 /modules/module-a/service-rest-cli/target/
 /.idea
+
+# Maven build output
+target/
